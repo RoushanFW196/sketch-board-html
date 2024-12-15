@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch Board</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/511cab3264.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-contanier">
+      <div class="menu-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+
+      <div class="menu-icon-container">
+        <div class="icon">
+          <i class="fa-duotone fa-solid fa-pencil"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-eraser"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-download"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-upload"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-rotate-left"></i>
+        </div>
+
+        <div class="icon">
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+      </div>
+
+      <div class="pick-color">
+        <input
+          type="range"
+          id="pen-width"
+          name="vol"
+          min="1"
+          max="10"
+          value="2"
+          step="1"
+          class="color-slider"
+        />
+        <div class="color-option">
+          <div class="color black"></div>
+          <div class="color green"></div>
+          <div class="color red"></div>
+          <div class="color yellow"></div>
+          <div class="color brown"></div>
+        </div>
+      </div>
+
+      <div class="pick-color erase">
+        <input
+          type="range"
+          id="erase-width"
+          name="vol"
+          min="1"
+          max="10"
+          value="2"
+          step="1"
+          class="color-slider"
+        />
+      </div>
+    </div>
+
+    <script src="./tool.js"></script>
+  </body>
+</html>
